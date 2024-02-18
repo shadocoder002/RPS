@@ -5,7 +5,7 @@ def gameselect():
     global selection
     global computer
     global cselect
-    selection = input("Rock Paper or Scissors? Respond with r, p, or s ").lower()
+    selection = input("Rock Paper or Scissors? Respond with r, p, or s: ").lower()
     if selection == "r":
         selection = 0
         rselect = "rock"
@@ -44,5 +44,5 @@ def decision():
 while True:
     gameselect()
     decision()
-    print("Press any key to play another game.")
-    m.getch()
+    print("Press any key to play another game.", end="\n"*3)
+    #m.getch()
